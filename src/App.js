@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import Header from "./Components/Header/Header";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="appContainer">
+      <div className="app">
+        <Header />
+        <div className="contentContainer">
+          <Outlet context={[showModal, setShowModal]} />
+        </div>
+        {showModal ? (
+          <div className="modalContainer">
+            <div className="modalContainer-div">Hello world</div>
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }

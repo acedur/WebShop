@@ -1,0 +1,26 @@
+.contactContainer{
+    height: 85vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px;
+    border-style: solid;
+    border-radius: 90px;
+}
+
+.contactInfo{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.contactForm{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}

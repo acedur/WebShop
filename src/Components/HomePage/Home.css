@@ -1,0 +1,30 @@
+.homeContainer{
+position: relative;
+height: 85vh;
+width: 95%;
+border: 1px;
+border-style: solid;
+border-color: white;
+border-radius: 90px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+.homeText{
+height: auto;
+width: 70%;
+display: block;
+color: rgb(202, 195, 195);
+font-size:27px;
+font-weight: bolder;
+text-align: center;
+align-items: center;
+padding: 20px;
+background: rgba(0, 0, 0, 0.55);
+}
