@@ -1,6 +1,7 @@
 .mainCardsContainer {
     width: 80%;
-    height: 100vh;
+    bottom: 0;
+    height: 90vh;
     overflow: auto;
     overflow-x: hidden;
     display: flex;
