@@ -33,19 +33,28 @@
 }
 
 .header {
+    max-width: 100%;
     font-size: 18px;
     font-weight: 700;
     color: black;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.header::first-letter{
     text-transform: capitalize;
 }
 
 .shortDesc {
+    max-width: 100%;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.shortDesc::first-letter{
+    text-transform: capitalize;
 }
 
 .priceRating {
