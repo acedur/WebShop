@@ -7,7 +7,6 @@ import Home from "./Components/HomePage/Home";
 import Products from "./Components/Products/Products";
 import Contact from "./Components/ContactAndInfo/Contact";
 import ShoppingCart from "./Components/Shopping Cart/ShoppingCart";
-import { UseCardsContext } from "./Context/GeneralContext/useCardsContext";
 
 const router = createBrowserRouter([
   {
@@ -34,8 +33,6 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <ContextProvider value={{ cards, hanleCards }}> */}
     <RouterProvider router={router} />
-    {/* </ContextProvider> */}
   </React.StrictMode>
 );
