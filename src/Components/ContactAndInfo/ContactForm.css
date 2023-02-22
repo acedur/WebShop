@@ -1,0 +1,48 @@
+.contactForm{
+    height: 96.5%;
+    width: 100%;
+    max-width: 1110px;
+    padding: 1.1rem 3rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+label {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.contactInput, .messageInput {
+    width: 90%;
+    font-size: 1.1em;
+    padding: 0.8rem;
+    background-color: rgb(172, 170, 170);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.messageInput {
+    min-height: 250px;
+    resize: vertical;
+}
+
+.submit {
+    width: 140px;
+background-color: #32326d;
+color: whitesmoke;
+font-size: 1.3rem;
+display: inline-block;
+outline: none;
+border: none;
+padding: 0.8rem 3rem;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.submit:hover {
+    opacity: 0.9;
+}

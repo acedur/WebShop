@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header/Header";
@@ -6,7 +6,6 @@ import { ShopContext } from "./Context/ShopContext";
 import { useContextDataShop } from "./Context/useContextDataShop";
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
   const shop = useContextDataShop();
 
   return (
@@ -15,13 +14,8 @@ function App() {
         <div className="app">
           <Header />
           <div className="contentContainer">
-            <Outlet context={[showModal, setShowModal]} />
+            <Outlet />
           </div>
-          {showModal ? (
-            <div className="modalContainer">
-              <div className="modalContainer-div">Hello world</div>
-            </div>
-          ) : null}
         </div>
       </div>
     </ShopContext.Provider>

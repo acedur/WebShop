@@ -1,19 +1,13 @@
 import React from "react";
 import "./Contact.css";
+import ContactForm from "./ContactForm";
+import ContactInfo from "./ContactInfo";
 
 function Contact() {
   return (
     <div className="contactContainer">
-      <div className="contactInfo">
-        <div>Lokacija</div>
-        <div>Telefonski broj</div>
-        <div>Email</div>
-      </div>
-      <div className="contactForm">
-        <input></input>
-        <input></input>
-        <button>submit</button>
-      </div>
+      <ContactInfo />
+      <ContactForm />
     </div>
   );
 }

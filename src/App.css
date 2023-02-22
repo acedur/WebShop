@@ -1,12 +1,14 @@
 .appContainer{
     width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .app {
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
-    max-width: 1820px;
+    max-width: 2400px;
+    max-height: 80vh;
     margin: 0 auto;
 }
 
@@ -23,26 +25,7 @@
     width: 100%;
     overflow-y: hidden;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
-.modalContainer{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-}
 
-.modalContainer-div{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background-color: aliceblue;
-    top: 50%;
-    left: 50%;
-    transform: translate(50%);
-}

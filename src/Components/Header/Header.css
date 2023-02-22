@@ -1,7 +1,8 @@
 .logo {
     height: 70px;
     width: 70px;
-    padding-left: 20px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
 }
 
 .navContainer {
@@ -28,11 +29,9 @@
   align-items: center;
   justify-content: space-around;
   position: relative;
-  padding: 5px;
-  border: 2px;
+  padding: 0.5rem;
   border-radius: 6px;
-  border-color: #32326d;
-  border-style: solid;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btnNav{

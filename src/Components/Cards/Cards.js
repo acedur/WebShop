@@ -5,7 +5,7 @@ import Loading from "../Loading/Loading";
 import Card from "./Card/Card";
 
 function Cards() {
-  const { shop, handleShop } = useContext(ShopContext);
+  const { handleShop, selectedCategory } = useContext(ShopContext);
   const [data, setData] = useState([]);
   const [category, setCategory] = useState([]);
 
@@ -24,14 +24,13 @@ function Cards() {
         setCategory(res);
       });
   }, []);
-
   useEffect(() => {
     if (data.length && category.length) {
       handleShop(ADD_PRODUCT, { products: data, category: category });
     }
   }, [data.length, category.length]);
 
-  if (shop.length === 0) {
+  if (data.length === 0) {
     return (
       <div className="mainCardsContainer">
         <Loading />
@@ -41,9 +40,9 @@ function Cards() {
 
   return (
     <div className="mainCardsContainer">
-      {shop.products.map((product) => {
-        return <Card key={product.id} data={product} />;
-      })}
+      {selectedCategory.map((product) => (
+        <Card key={product.id} data={product} />
+      ))}
     </div>
   );
 }

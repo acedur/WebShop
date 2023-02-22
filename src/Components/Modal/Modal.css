@@ -1,0 +1,116 @@
+@media screen and (max-width: 960px){
+    .modalContainer-div{
+      flex-direction: column;
+      justify-content: space-between
+    }
+    .image{
+        padding-top: 30px;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modalContentContainer {
+        padding-top: 10px;
+    }
+}
+
+.modalContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.modalContainer-div{
+    padding: 15px;
+    position: fixed;
+    max-width: 2000px;
+    width: 70%;
+    height: 80vh;
+    background-color: aliceblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.closeModal {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    height: 20px;
+    width: 40px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #32326d;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.closeModal:hover{
+    opacity: 0.9;
+}
+
+.image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modalContentContainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.description {
+    display: flex;
+    text-align: start;
+    padding: 1rem;
+}
+
+.price-rating {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stock{
+    text-align: start;
+}

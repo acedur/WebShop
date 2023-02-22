@@ -1,0 +1,43 @@
+.contactInfo{
+    height: 96.5%;
+    width: 100%;
+    max-width: 1110px;
+    padding: 1.1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    background-color: #32326d;
+    color: whitesmoke;
+}
+
+.contactInfoTitle {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.contactInfoParagraph{
+    font-size: large;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.contactItem {
+    padding: 1.5rem;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.contactIcon {
+    color: #32326d;
+    background-color: rgb(172, 170, 170);
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}

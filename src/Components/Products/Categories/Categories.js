@@ -1,30 +1,27 @@
-import React, { useState, useEffect } from "react";
-import Loading from "../../Loading/Loading";
+import React, { useContext, useEffect } from "react";
+import { ShopContext } from "../../../Context/ShopContext";
 import "./Categories.css";
 
 function Categories() {
-  const [data, setData] = useState([]);
+  const { shop, handleSelectedCategory } = useContext(ShopContext);
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products/categories")
-      .then((res) => res.json())
-      .then((json) => setData([...data, ...json]));
-    // eslint-disable-next-line
-  }, []);
+    if (shop.products.length) {
+      handleSelectedCategory("products");
+    }
+  }, [shop.products.length]);
 
-  if (data.length === 0) {
-    return (
-      <div className="categoriesContainer navBorder">
-        <Loading />
-      </div>
-    );
-  }
   return (
     <div className="categoriesContainer navBorder">
-      {data.map((item) => {
+      {Object.keys(shop).map((categs) => {
         return (
-          <div className="categoriesBtn" key={item}>
-            {item}
+          <div
+            type="radio"
+            className="categoriesBtn"
+            key={categs}
+            onClick={() => handleSelectedCategory(categs)}
+          >
+            {categs}
           </div>
         );
       })}

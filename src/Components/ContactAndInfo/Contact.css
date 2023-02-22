@@ -1,26 +1,19 @@
+@media screen and (max-width:960px) {
+    .contactContainer {
+        flex-direction: column;
+        z-index: -1;
+    }
+}
+
 .contactContainer{
+    margin-top: 1rem;
     height: 85vh;
     width: 95%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    border: 1px;
-    border-style: solid;
+    position: relative;
     border-radius: 90px;
-}
-
-.contactInfo{
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-}
-
-.contactForm{
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
+    overflow: auto;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
 }
