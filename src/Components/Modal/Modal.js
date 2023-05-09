@@ -19,8 +19,8 @@ function Modal({ handleModal, data }) {
         <div className="image">
           <Swiper modules={[Navigation, Pagination]}>
             {images.map((image, index) => (
-              <SwiperSlide key={image.id}>
-                <img src={image} alt={image} key={`${image}-${index}`} />
+              <SwiperSlide key={`${image}-${index}`}>
+                <img src={image} alt={image} />
               </SwiperSlide>
             ))}
           </Swiper>

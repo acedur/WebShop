@@ -3,7 +3,8 @@ import { ShopContext } from "../../../Context/ShopContext";
 import "./Categories.css";
 
 function Categories() {
-  const { shop, handleSelectedCategory } = useContext(ShopContext);
+  const { shop, handleSelectedCategory, selectedCategory } =
+    useContext(ShopContext);
 
   useEffect(() => {
     if (shop.products.length) {
@@ -17,9 +18,13 @@ function Categories() {
         return (
           <div
             type="radio"
-            className="categoriesBtn"
             key={categs}
             onClick={() => handleSelectedCategory(categs)}
+            className={
+              categs === selectedCategory
+                ? "categoriesBtn categoriesBtnActive"
+                : "categoriesBtn"
+            }
           >
             {categs}
           </div>
